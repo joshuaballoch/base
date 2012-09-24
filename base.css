@@ -1,0 +1,143 @@
+/*Containers*/
+.upper_container {
+  width:960px;
+  margin:0 auto 0 auto;
+  background-image:url('back.png');
+  background-size:100% auto;
+  background-repeat:none;
+  height:400px;
+}
+.mid_container {
+  width:100%;
+  height:40px;
+  opacity:0.8;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  left:0;
+}
+.lower_container {
+  width:960px;
+  margin:0 auto 0 auto;
+}
+.sticky2 {
+  margin-top:41px;
+}
+body {
+  font-family:Georgia, Arial;
+}
+/*Header*/
+header {
+  width:960px;
+  background:#666;
+  margin:0 auto 0 auto;
+  font-family:"Helvetica Neue", Helvetica, Arial;
+  text-transform:uppercase;
+  font-size:12;
+  height:41px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.sticky {
+  position:fixed;
+  top:0px;
+  left:0;
+}
+a {
+  text-decoration:none;
+  color:#e5e5e5;
+}
+a:hover {
+  color:#ccc;
+}
+nav {
+  width:320px;
+  display:inline-block;
+  vertical-align:top;
+  font-weight:400;
+  font-size:13px;
+  line-height:15px;
+  padding:0;
+}
+nav ul {
+  height:41px;
+  margin-top:0px;
+}
+nav a hover {
+  color:#e5e5e5;
+}
+nav ul li {
+  list-style:none;
+  display:inline-block;
+  padding:13px 10px 13px 10px;
+  position:relative;
+}
+nav ul li:hover {
+  background:#ccc;
+}
+#search_bar {
+  display:inline-block;
+  width:320px;
+  height:30px;
+  background:#fff;
+  margin-left:45px;
+  margin-top:5px;
+  vertical-align:top;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#menu {
+  float:right;
+  width:182px;
+  margin-left:65px;
+  vertical-align:top;
+  padding-top:1px;
+  padding-right:20px;
+}
+#menu ul li {
+  list-style:none;
+  float:right;
+  margin-left:20px;
+}
+/* Main Layouts */
+.picture {
+  margin:10px;
+  width:320px;
+  position:relative;
+  z-index:0;
+}
+.picture-menu {
+  position:absolute;
+  width:150px;
+  height:100px;
+  top:100px;
+  left:100px;
+  z-index:1;
+  display:none;
+}
+.picture-menu ul li {
+  list-style:none;
+  width:80px;
+  height:20px;
+  padding:5px;
+  background:red;
+  margin-bottom:2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border:2px solid orange;
+  opacity:0.8;
+}
+.picture-menu ul li:hover {
+  opacity:1;
+}
+.picture:hover .picture-menu, .picture.hover .picture-menu {
+  display:block;
+}
+.picture img {
+  max-width:320px;
+  max-height:320px;
+}
