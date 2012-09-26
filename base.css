@@ -122,6 +122,18 @@ nav ul li:hover {
   float:right;
   margin-left:20px;
 }
+.circle {
+  margin-top:-3px;
+  background-image:url('images/circle.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  height:23px;
+  width:23px;
+  text-align:center;
+  padding-top:4px;
+  font-size:11px;
+  font-weight:600;
+}
 /* Main Layouts */
 .picture {
   margin:10px;
