@@ -24,13 +24,21 @@
 .sticky2 {
   margin-top:41px;
 }
+span {
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:2;
+}
 body {
   font-family:Georgia, Arial;
 }
 /*Header*/
 header {
   width:960px;
-  background:#666;
+  background:#4e4e4e;
   margin:0 auto 0 auto;
   font-family:"Helvetica Neue", Helvetica, Arial;
   text-transform:uppercase;
@@ -73,9 +81,21 @@ nav ul li {
   display:inline-block;
   padding:13px 10px 13px 10px;
   position:relative;
+  width:20px;
+  height:15px;
+  text-align:center;
+}
+nav ul li.wide {
+  width:74px;
+}
+nav ul li.medium {
+  width:50px;
+}
+nav ul li span {
+  line-height:42px;
 }
 nav ul li:hover {
-  background:#ccc;
+  background:#888;
 }
 #search_bar {
   display:inline-block;
