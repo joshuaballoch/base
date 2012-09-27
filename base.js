@@ -1,9 +1,9 @@
 $(document).ready(function() {
   var distance = $('.mid_container').offset().top,
     $window = $(window);
-    
-  
-    
+
+
+
   $window.scroll(function() {
     if ( $window.scrollTop() >= distance ) {
         // Your div has reached the top
@@ -18,5 +18,5 @@ $(document).ready(function() {
         $(".lower_container").removeClass("sticky2");
     }
   });
-  
+
 });
