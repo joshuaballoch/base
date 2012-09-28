@@ -152,14 +152,14 @@ nav .add:hover{
   margin-left:65px;
   vertical-align:top;
   padding-top:1px;
-  height:40px;
+  height:41px;
 }
 #menu ul li {
   height:100%;
   list-style:none;
   float:right;
   position:relative;
-  margin-top:-12px;
+  margin-top:-1px;
   line-height:38px;
   width:30px;
 }
@@ -173,24 +173,36 @@ nav .add:hover{
   background-image:url('images/cart.png');
   background-size:100% auto;
   background-repeat:no-repeat;
-  background-position: bottom;
+  background-position: 0px -55px;
 }
 #menu li.shopping-cart:hover {
   background-position:top;
   background-repeat:no-repeat;
 }
-
-.circle {
-  margin-top:-3px;
-  background-image:url('images/circle2.png');
-  background-size:100% auto;
+#menu li.notifications {
+  background-image:url('images/world_white.png');
+  background-size:22px;
   background-repeat:no-repeat;
-  height:23px;
-  width:23px;
-  text-align:center;
-  padding-top:4px;
+  background-position:4px 10px;
+}
+#menu li.notifications:hover, #menu li.notifications.hover {
+  background-image:url('images/world_white.png');
+}
+.notifier {
+  position:absolute;
+  top:3px;
+  right:0;
+  z-index:11;
+  background:#00D4FF;
+  padding:1px;
+  line-height:12px;
+  color:#003366;
+  font-weight:900;
   font-size:11px;
-  font-weight:600;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border:2px solid #024b94;
 }
 /* Main Layouts */
 .picture {
@@ -273,7 +285,7 @@ nav .add:hover{
 }
 .brands_dropdown {
   position:absolute;
-  left:138px;
+  left:123px;
   top:0;
   width:200px;
   background:#888;
@@ -281,7 +293,7 @@ nav .add:hover{
 }
 .trademark_dropdown {
   position:absolute;
-  left:40px;
+  left:25px;
   top:0;
   width:200px;
   background:#888;
@@ -289,7 +301,7 @@ nav .add:hover{
 }
 .me_dropdown {
   position:absolute;
-  left:212px;
+  left:197px;
   top:0;
   width:200px;
   background:#888;
