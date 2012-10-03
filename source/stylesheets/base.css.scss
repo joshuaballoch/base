@@ -46,7 +46,7 @@ a:hover {
 }
 .lower_container {
   width:960px;
-  height:400px;
+  height:800px;
   margin:0 auto 0 auto;
 }
 .sticky2 {
@@ -213,6 +213,12 @@ nav {
     float:right;
   }
   .sign-in {
+    .header-btn {
+      width:52px;
+      text-transform:lowercase;
+      color:#fff;
+      &:hover, &:focus { color:$blue-hover}
+    }
     .dropdown-menu {
       width:200px;
       left:0px;
@@ -256,12 +262,6 @@ nav {
             &:hover {color:$blue-hover;}
           }
       }
-    }
-    .header-btn {
-      width:52px;
-      text-transform:lowercase;
-      color:$grey-light;
-      &:hover, &:focus { color:$blue-hover}
     }
   }
   .dropdown-menu {
