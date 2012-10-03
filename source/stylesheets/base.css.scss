@@ -358,8 +358,22 @@ nav {
 // Dropdown Menus
 .dropdowns {
   width:960px;
+  height:60px;
   position:absolute;
-  bottom:0px;
+  top:40px;
   left:0;
   z-index:10;
+  background:$grey-light;
+  .picture {
+    margin:0;
+    padding:5px;
+    display:inline-block;
+    vertical-align:top;
+    width:60px;
+    height:60px;
+    img {
+      max-height:50px;
+      max-width:50px;
+    }
+  }
 }
