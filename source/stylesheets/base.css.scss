@@ -1,0 +1,309 @@
+// Colour Variables
+$grey-light:#888;
+$grey:#4e4e4e;
+$grey-dark:#222;
+
+$blue: #0080FF;
+$blue-hover: #00D4FF;
+$green: #22FF00;
+$green-hover: #A2FF00;
+$pink: #FF008C;
+
+a, a:visited {
+  text-decoration:none;
+  color:$grey-dark;
+}
+a:hover {
+  color:$grey;
+  text-decoration:none;
+}
+
+//at http://www.colourlovers.com/palette/2406301/Rechao_Palette
+
+
+// Containers
+.upper_container {
+  width:960px;
+  margin:0 auto 0 auto;
+  background-image:url('/images/back.png');
+  background-size:100% auto;
+  background-repeat:none;
+  height:400px;
+}
+.mid_container {
+  width:100%;
+  height:40px;
+  opacity:0.85;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  left:0;
+}
+.lower_container {
+  width:960px;
+  height:400px;
+  margin:0 auto 0 auto;
+}
+.sticky2 {
+  margin-top:40px;
+}
+span {
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:2;
+}
+body {
+  font-family:Georgia, Arial;
+}
+//Header
+header {
+  width:960px;
+  position:relative;
+  z-index:10;
+  background:$grey;
+  margin:0 auto 0 auto;
+  font-family:"Helvetica Neue", Helvetica, Arial;
+  text-transform:uppercase;
+  font-size:12;
+  height:40px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  .dropdown {
+    display:inline-block;
+  }
+  .header-btn {
+    font-weight:300;
+    color:#fff;
+    height:26px;
+    margin:0;
+    text-align:center;
+    padding-top:10px;
+    width:32px;
+    border:0px;
+    border-radius:0px;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    background:$grey;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    text-shadow:none;
+  }
+  .header-btn:focus {
+    outline:none;
+    background:$grey-dark;
+    color:#fff;
+  }
+}
+.sticky {
+  position:fixed;
+  top:0px;
+  left:0;
+}
+
+.dropdown-menu {
+  margin-top:0px;
+  padding:0 0 0 0;
+  border:0;
+  border-radius:0px;
+  -webkit-border-radius:0px;
+  -moz-border-radius:0px;
+}
+
+nav {
+  width:390px;
+  display:inline-block;
+  vertical-align:top;
+  font-weight:400;
+  font-size:13px;
+  line-height:15px;
+  padding:0;
+  ul li {
+    list-style:none;
+    padding:3px 10px 0px 10px;
+    &:hover {
+      background:$grey;
+      color:#fff;
+    }
+  }
+  .dropdown-menu {
+    background:$grey-dark;
+    padding:0;
+  }
+  .header-btn{
+    &:hover { background:$grey-light; }
+    &:focus { background:$grey-light; }
+  }
+  .dropdown-menu {
+    background:$grey-light;
+  }
+  .add {
+    height:25px;
+    width:25px;
+    margin-top:8px;
+    margin-left:8px;
+    background-image:url('images/tshirt.png');
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    &:hover { background-position:top }
+    display:inline-block;
+    vertical-align:top;
+  }
+  .trademark .header-btn {
+    width:92px;
+  }
+  .brands .header-btn {
+    width:52px;
+  }
+}
+
+#search_bar {
+  display:inline-block;
+  width:320px;
+  height:30px;
+  margin-top:5px;
+  vertical-align:top;
+  img {
+    height:18px;
+    width:18px;
+    margin-top:6px;
+    display:inline-block;
+    vertical-align:top;
+  }
+  form {
+    display:inline-block;
+    vertical-align:top;
+    margin:4px 0 0 4px;
+    input {
+      height:23px;
+      width:295px;
+      background:$grey-dark;
+      border:1px solid #111;
+      color:#fff;
+      padding:0 0 0 4px;
+      &:focus {
+        outline:none;
+        border:none;
+      }
+    }
+  }
+}
+
+#menu {
+  float:right;
+  width:240px;
+  vertical-align:top;
+  height:40px;
+  .lang {
+    line-height:40px;
+    color:white;
+    padding: 0 5px 0 5px;
+  }
+  .item {
+    float:right;
+  }
+  .dropdown-menu {
+    background:$grey-dark;
+    color:#fff;
+    text-align:right;
+    position:absolute;
+    top:100%;
+    left:-100px;
+    width:100px;
+  }
+  ul li {
+    list-style:none;
+    padding:3px 10px 3px 10px;
+    &:hover { background:$grey; }
+  }
+}
+
+#menu a.shopping-cart {
+  height:40px;
+  width:30px;
+  position:relative;
+  background-image:url('images/cart.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: 0px -55px;
+}
+#menu a.shopping-cart span {
+  width:30px;
+  height:30px;
+}
+#menu li.shopping-cart:hover {
+  background-position:top;
+  background-repeat:no-repeat;
+}
+#menu li.notifications {
+  background-image:url('images/world_white.png');
+  background-size:22px;
+  background-repeat:no-repeat;
+  background-position:4px 10px;
+}
+#menu li.notifications:hover, #menu li.notifications.hover {
+  background-image:url('images/world_white.png');
+}
+.notifier {
+  position:absolute;
+  top:3px;
+  right:0;
+  z-index:11;
+  background:#00D4FF;
+  padding:1px;
+  line-height:12px;
+  color:#003366;
+  font-weight:900;
+  font-size:11px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border:2px solid #024b94;
+}
+// Main Layouts
+.picture {
+  margin:10px;
+  width:320px;
+  position:relative;
+  z-index:0;
+  &:hover .picture-menu, &.hover .picture-menu { display:block;}
+  img { max-width: 320px; max-height:320px; }
+}
+.picture-menu {
+  position:absolute;
+  width:150px;
+  height:100px;
+  top:100px;
+  left:100px;
+  z-index:1;
+  display:none;
+  ul li {
+    list-style:none;
+    width:80px;
+    height:20px;
+    padding:5px;
+    background:red;
+    margin-bottom:2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border:2px solid orange;
+    opacity:0.8;
+    &:hover { opacity:1 }
+  }
+}
+
+// Dropdown Menus
+.dropdowns {
+  width:960px;
+  position:absolute;
+  bottom:0px;
+  left:0;
+  z-index:10;
+}
