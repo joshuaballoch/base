@@ -46,7 +46,7 @@ header {
   font-family:"Helvetica Neue", Helvetica, Arial;
   text-transform:uppercase;
   font-size:12;
-  height:41px;
+  height:40px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -63,8 +63,42 @@ a {
 a:hover {
   color:#ccc;
 }
+.dropdown-menu {
+  margin-top:0px;
+  padding:0 0 0 0;
+  border:0;
+  border-radius:0px;
+  -webkit-border-radius:0px;
+  -moz-border-radius:0px;
+}
+header .dropdown {
+  display:inline-block;
+}
+.header-btn {
+  font-weight:300;
+  color:#fff;
+  height:26px;
+  margin:0;
+  text-align:center;
+  padding-top:10px;
+  width:32px;
+  border:0px;
+  border-radius:0px;
+  -webkit-border-radius:0px;
+  -moz-border-radius:0px;
+  background:#4e4e4e;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  text-shadow:none;
+}
+.header-btn:focus {
+  outline:none;
+  background:#222;
+  color:#fff;
+}
 nav {
-  width:320px;
+  width:390px;
   display:inline-block;
   vertical-align:top;
   font-weight:400;
@@ -72,29 +106,23 @@ nav {
   line-height:15px;
   padding:0;
 }
-nav ul {
-  height:41px;
-  margin-top:0px;
-}
+
 nav ul li {
   list-style:none;
-  display:inline-block;
-  padding:13px 10px 13px 10px;
-  position:relative;
-  width:20px;
-  height:15px;
-  text-align:center;
-}
-nav ul li.wide {
-  width:74px;
-}
-nav ul li.medium {
-  width:50px;
-}
-nav ul li span {
-  line-height:42px;
+  padding:3px 10px 0px 10px;
 }
 nav ul li:hover, nav ul li.hover {
+  background:#4e4e4e;
+  color:#fff;
+}
+nav .dropdown-menu {
+  background:#222;
+  padding:0;
+}
+nav .header-btn:hover {
+  background:#888;
+}
+nav .header-btn:focus, nav .dropdown-menu {
   background:#888;
 }
 nav .add {
@@ -112,16 +140,18 @@ nav .add {
 nav .add:hover{
   background-position:top;
 }
+.trademark .header-btn {
+  width:92px;
+}
+.brands .header-btn {
+  width:52px;
+}
 #search_bar {
   display:inline-block;
   width:320px;
   height:30px;
-  margin-left:45px;
   margin-top:5px;
   vertical-align:top;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
 }
 #search_bar img {
   height:18px;
@@ -137,7 +167,7 @@ nav .add:hover{
 }
 #search_bar form input {
   height:23px;
-  width:240px;
+  width:295px;
   background:#333;
   border:1px solid #111;
   color:#fff;
@@ -145,35 +175,51 @@ nav .add:hover{
 }
 #search_bar input:focus {
   outline:none;
+  border:none;
 }
+
 #menu {
   float:right;
-  width:182px;
-  margin-left:65px;
+  width:240px;
   vertical-align:top;
-  padding-top:1px;
-  height:41px;
+  height:40px;
+}
+.lang {
+  line-height:40px;
+  color:white;
+  padding: 0 5px 0 5px;
+}
+#menu .item {
+  float:right;
+}
+#menu .dropdown-menu {
+  background:#222;
+  color:#fff;
+  text-align:right;
+  position:absolute;
+  top:100%;
+  left:-100px;
+  width:100px;
 }
 #menu ul li {
-  height:100%;
   list-style:none;
-  float:right;
-  position:relative;
-  margin-top:-1px;
-  line-height:38px;
-  width:30px;
-}
-#menu li:hover.no-hover {
-  background:none;
+  padding:3px 10px 3px 10px;
 }
 #menu li:hover, #menu li.hover {
-  background:#222;
+  background:#4e4e4e;
 }
-#menu li.shopping-cart {
+#menu a.shopping-cart {
+  height:40px;
+  width:30px;
+  position:relative;
   background-image:url('images/cart.png');
   background-size:100% auto;
   background-repeat:no-repeat;
   background-position: 0px -55px;
+}
+#menu a.shopping-cart span {
+  width:30px;
+  height:30px;
 }
 #menu li.shopping-cart:hover {
   background-position:top;
@@ -250,60 +296,5 @@ nav .add:hover{
   bottom:0px;
   left:0;
   z-index:10;
-  background:red;
 }
-.dropdowns ul li {
-  list-style:none;
-  position:relative;
-  width:95%;
-  height:22px;
-  padding-left:5%;
-  line-height:25px;
-}
-.dropdowns ul {
-  padding:0;
-  margin:0;
-}
-.dropdowns ul li:hover {
-  background:#444;
-}
-.notifications_dropdown {
-  position:absolute;
-  right:0;
-  top:0;
-  width:200px;
-  background:#222;
-  display:none;
-}
-.cart_dropdown {
-  position:absolute;
-  right:29px;
-  top:0;
-  width:200px;
-  background:#222;
-  display:none;
-}
-.brands_dropdown {
-  position:absolute;
-  left:123px;
-  top:0;
-  width:200px;
-  background:#888;
-  display:none;
-}
-.trademark_dropdown {
-  position:absolute;
-  left:25px;
-  top:0;
-  width:200px;
-  background:#888;
-  display:none;
-}
-.me_dropdown {
-  position:absolute;
-  left:197px;
-  top:0;
-  width:200px;
-  background:#888;
-  display:none;
-}
+.
