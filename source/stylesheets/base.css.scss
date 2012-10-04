@@ -50,7 +50,13 @@ a:hover {
   height:800px;
   margin:0 auto 0 auto;
 }
-.sticky2 {
+.sticky { //Added to mid_container by base.js on scroll
+  position:fixed;
+  top:0px;
+  left:0;
+}
+
+.sticky2 { //Added to lower_container by base.js on scroll
   margin-top:40px;
 }
 span {
@@ -104,11 +110,6 @@ header {
     background:$grey-dark;
     color:#fff;
   }
-}
-.sticky {
-  position:fixed;
-  top:0px;
-  left:0;
 }
 
 .dropdown-menu {

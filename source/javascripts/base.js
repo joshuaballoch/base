@@ -1,8 +1,7 @@
 $(document).ready(function() {
+  // Scroll Distance for Sticky Header
   var distance = $('.mid_container').offset().top,
     $window = $(window);
-
-
 
   $window.scroll(function() {
     if ( $window.scrollTop() >= distance ) {
