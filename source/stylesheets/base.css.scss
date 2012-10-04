@@ -26,7 +26,10 @@ a:hover {
   float:right;
   text-transform:none;
 }
-
+.column {
+  display:inline-block;
+  vertical-align:center
+}
 //at http://www.colourlovers.com/palette/2406301/Rechao_Palette
 
 
@@ -361,7 +364,14 @@ ol.feed {
     position:relative;
     width:100%;
     text-align:center;
+    padding-top:2px;
     color:$blue-hover;
+    .avatar {
+      position:absolute;
+      left:0;
+      top:5px;
+      img { width:35px; height:35px;}
+    }
     .rating {
       color:$grey;
     }
