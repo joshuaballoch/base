@@ -23,5 +23,9 @@ $(document).ready(function() {
     $(this).children('.picture').children('.overlay').toggle();
     $(this).children('.picture').children('.btn-group').toggle();
   });
+  //pei button
+  $(".pei").hover(function(){
+    $(".show-divider").toggleClass("hover");
+  });
 
 });
