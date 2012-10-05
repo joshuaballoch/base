@@ -30,12 +30,45 @@ a:hover {
   display:inline-block;
   vertical-align:center
 }
-form .btn {
+.btn {
   color:#fff;
   background:$blue;
   text-shadow:none;
-  &:hover, &:focus { color:#fff; background:$blue-hover}
+  &:hover, &:focus {
+    color:#fff; background:$blue-hover;
+    a { color:#fff; }
+  }
+  a {
+    color:#fff;
+    &:hover { color: #fff;}
+  }
 }
+.modal {
+  background:$grey-dark2;
+  color:#fff;
+  opacity:0.5;
+  a {
+    color:$blue-light;
+    &:hover {
+      color:$blue;
+    }
+    &.close {
+      color:#fff;
+    }
+  }
+  .modal-footer {
+    border-top:none;
+    background:$grey-dark2;
+  }
+  .btn {
+    color:#fff;
+    &:hover, &:focus {
+      color:#fff; background:$blue-hover;
+      a { color:#fff; }
+    }
+  }
+}
+
 //at http://www.colourlovers.com/palette/2406301/Rechao_Palette
 
 
