@@ -176,7 +176,7 @@ header {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
     text-shadow:none;
-    &:hover { color:$blue-light; }
+    &:hover, &.hover { color:$blue-light; }
     &:focus {
       outline:none;
       background:$grey-dark2;
@@ -215,7 +215,7 @@ nav {
     padding:0;
   }
   .header-btn{
-    &:hover { background:$grey-light; }
+    &:hover, &.hover { background:$grey-light; }
     &:focus { background:$grey-light; }
     margin-right:-4px;
     border-right:1px solid $grey-light;
@@ -284,7 +284,7 @@ nav {
   .header-btn {
     width:12px;
     background:none;
-    &:hover {background:$grey-dark2;}
+    &:hover, &.hover {background:$grey-dark2;}
     &:focus {background:$grey-dark2;}
   }
   .cart {

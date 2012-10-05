@@ -28,4 +28,12 @@ $(document).ready(function() {
     $(".show-divider").toggleClass("hover");
   });
 
+  //Hover menu functionality for Bootstrap
+  $('.dropdown').hover(function(){
+    $(this).closest('.dropdown-menu').stop(true, true).toggle();
+    $(this).toggleClass('open');
+  });
+  $('.dropdown-menu').hover(function(){
+    $(this).closest('.dropdown').stop(true,true).children(".header-btn").toggleClass("hover");
+  });
 });
